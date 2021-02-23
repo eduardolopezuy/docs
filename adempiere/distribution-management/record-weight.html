@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>6.1. Registro de Peso &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7. Gestión de Ventas" href="../quote-to-invoice/index.html" />
+    <link rel="prev" title="6. Gestión de Distribución" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> ERPYA
+          
+
+          
+            
+            <img src="../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/release-notes/index.html">4. <strong>Notas de Liberación ADempiere ERP</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. <strong>Gestión de Distribución</strong></a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.1. <strong>Registro de Peso</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../customer-relations/index.html">8. <strong>Gestión de Relaciones con Clientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pos-management/index.html">9. <strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requisition-to-invoice/index.html">10. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../returns/index.html">11. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-items/index.html">12. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../loan-management/index.html">13. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../human-resources-management/index.html">14. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../asset-management/index.html">15. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance-analysis/index.html">16. <strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/document-utility/index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/fiscal-printer/index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/procedures/index.html">3. <strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">E-commerce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ecommerce/index.html">1. <strong>e-Commerce</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">6. </span><strong>Gestión de Distribución</strong></a> &raquo;</li>
+        
+      <li><span class="section-number">6.1. </span><strong>Registro de Peso</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/adempiere/distribution-management/record-weight.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="registro-de-peso">
+<span id="documento-registro-de-peso"></span><h1><span class="section-number">6.1. </span><strong>Registro de Peso</strong><a class="headerlink" href="#registro-de-peso" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Distribución</strong>”, luego seleccione la ventana “<strong>Registro de Peso</strong>”.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere" src="../../_images/weight-record-menu.png" /></p>
+<p>Imagen 1. Menú de ADempiere</p>
+</div></blockquote>
+</li>
+<li><p>Podrá visualizar la ventana “<strong>Registro de Peso</strong>”, con los registros de la ventana.</p>
+<blockquote>
+<div><p><img alt="Ventana Registro de Peso" src="../../_images/weight-log-window.png" /></p>
+<p>Imagen 2. Ventana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione el icono “<strong>Registro Nuevo</strong>”, ubicado en la barra de herramientas de ADempiere, para crear un uevo registro en la ventana “<strong>Registro de Peso</strong>”.</p>
+<blockquote>
+<div><p><img alt="Icono Registro Nuevo de la Ventana Registro de Peso" src="../../_images/new-record-icon-in-the-weight-record-window.png" /></p>
+<p>Imagen 3. Icono Registro Nuevo de la Ventana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Organización</strong>”, la organización para la cual se encuentra realizando el documento.</p>
+<blockquote>
+<div><p><img alt="Campo Organización de la Vantana Registro de Peso" src="../../_images/organization-field-of-the-weight-record-window.png" /></p>
+<p>Imagen 4. Campo Organización de la Ventana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>No. del Documento</strong>”, el número de identificación del documento que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo No del Documento de la Vantana Registro de Peso" src="../../_images/field-no-the-weight-record-window-document.png" /></p>
+<p>Imagen 5. Campo No. del Documento de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione el tipo de documento a generar en el campo “<strong>Tipo de Documento</strong>”, la selección de este define el comportamiento del documento que se esta elaborando, dicho comportamiento se encuentra explicado en el documento <strong>Tipo de Documento</strong> elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>.</p>
+<blockquote>
+<div><p><img alt="Campo Tipo de Documento de la Vantana Registro de Peso" src="../../_images/document-type-field-of-the-weight-record-window.png" /></p>
+<p>Imagen 6. Campo Tipo de Documento de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>F. Documento</strong>”, la fecha en la cual se encuentra realizando el documento.</p>
+<blockquote>
+<div><p><img alt="Campo F Documento de la Vantana Registro de Peso" src="../../_images/field-f-document-of-the-weight-record-window.png" /></p>
+<p>Imagen 7. Campo F. Documento de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>No. Referencia</strong>”, el número de referencia correspondiente al registro que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo No. Referencia de la Vantana Registro de Peso" src="../../_images/field-no-weight-record-window-reference.png" /></p>
+<p>Imagen 8. Campo No. Referencia de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Introduzca en el campo “<strong>Descripción</strong>”, una breve descripción del registro que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo Descripción de la Vantana Registro de Peso" src="../../_images/description-field-of-weight-record-window.png" /></p>
+<p>Imagen 9. Campo Descripción de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Al tildar el checklist “<strong>Transacción de Ventas</strong>”, se indica que el registro que se encuentra realizando esta asociado a una transacción de ventas de ADempiere.</p>
+<blockquote>
+<div><p><img alt="Checklist Transacción de Ventas de la Vantana Registro de Peso" src="../../_images/checklist-sales-transaction-weight-record-window.png" /></p>
+<p>Imagen 10. Checklist Transacción de Ventas de la Vantana Registro de Peso</p>
+<ol class="arabic">
+<li><p>Al tildar el checklist “<strong>Transacción de Ventas</strong>”, es habilitado el campo “<strong>Orden de Flete</strong>”, para seleccionar la orden de flete correspondiente al registro que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo Orden de Flete de la Ventana Registro de Peso" src="../../_images/freight-order-field-in-weight-record-window.png" /></p>
+<p>Imagen 11. Campo Orden de Flete de la Ventana Registro de Peso</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>El checklist “<strong>Peso de Referencia</strong>”, indica si un peso es únicamente de referencia.</p>
+<blockquote>
+<div><p><img alt="Checklist Peso de Referencia de la Vantana Registro de Peso" src="../../_images/checklist-weight-reference-window-weight-record.png" /></p>
+<p>Imagen 12. Checklist Peso de Referencia de la Vantana Registro de Peso</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Al seleccionar el checklist “<strong>Peso de Referencia</strong>”, son deshabilitados los campos “<strong>Orden de Venta</strong>” y “<strong>Línea Orden de Venta</strong>”.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Orden de Venta</strong>”, la orden de venta asociada al registro de peso que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo Orden de Venta de la Vantana Registro de Peso" src="../../_images/sales-order-field-in-the-weight-record-window.png" /></p>
+<p>Imagen 13. Campo Orden de Venta de la Vantana Registro de Peso</p>
+<ol class="arabic">
+<li><p>Al seleccionar una orden de compra en el campo “<strong>Orden de Venta</strong>”, es habilitado el campo “<strong>Almacén</strong>”, donde debe seleccionar el almacén donde se encuentra ubicado el producto asociado a la orden seleccionada.</p>
+<blockquote>
+<div><p><img alt="Campo Almacén de la Vantana Registro de Peso" src="../../_images/warehouse-field-of-weight-record-window.png" /></p>
+<p>Imagen 14. Campo Almacén de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Línea Orden de Venta</strong>”, la línea de la orden de venta seleccionada.</p>
+<blockquote>
+<div><p><img alt="Campo Línea Orden de Venta de la Vantana Registro de Peso" src="../../_images/sales-order-line-field-in-weight-record-window.png" /></p>
+<p>Imagen 15. Campo Línea Orden de Venta de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Transportista</strong>”, la empresa de transporte asociada al registro de peso que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo Transportista de la Vantana Registro de Peso" src="../../_images/carrier-field-of-weight-record-window.png" /></p>
+<p>Imagen 16. Campo Transportista de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Conductor</strong>”, el conductor asociado al registro de peso que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo Conductor de la Vantana Registro de Peso" src="../../_images/conductor-field-of-the-weight-record-window.png" /></p>
+<p>Imagen 17. Campo Conductor de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione en el campo “<strong>Vehículo</strong>”, el vehículo asociado al registro de peso que se encuentra realizando.</p>
+<blockquote>
+<div><p><img alt="Campo Vehículo de la Vantana Registro de Peso" src="../../_images/vehicle-field-of-weight-record-window.png" /></p>
+<p>Imagen 18. Campo Vehículo de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione la opción “<strong>Leer Peso (Desde Báscula)</strong>”, para cargar la información del peso del producto suministrada por la báscula.</p>
+<blockquote>
+<div><p><img alt="Opción Leer Peso Desde Báscula de la Vantana Registro de Peso" src="../../_images/option-to-read-weight-from-scale-in-the-weight-record-window.png" /></p>
+<p>Imagen 19. Opción Leer Peso Desde Báscula de la Vantana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione el icono “<strong>Guardar Cambios</strong>”, ubicado en la barra de herramientas de ADempiere, para guardar el registro de los campos de la ventana “<strong>Registro de Peso</strong>”.</p>
+<blockquote>
+<div><p><img alt="Icono Guardar Cambios de la Ventana Registro de Peso" src="../../_images/save-changes-icon-in-weight-log-window.png" /></p>
+<p>Imagen 20. Icono Guardar Cambios de la Ventana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione la opción “<strong>Completar</strong>”, ubicada en la parte inferior de la ventana “<strong>Registro de Peso</strong>”.</p>
+<blockquote>
+<div><p><img alt="Opción Completar de la Ventana Registro de Peso" src="../../_images/complete-option-of-the-weight-registration-window.png" /></p>
+<p>Imagen 21. Opción Completar de la Ventana Registro de Peso</p>
+</div></blockquote>
+</li>
+<li><p>Seleccione la acción “<strong>Completar</strong>” y la opción “<strong>OK</strong>”, para completar el documento “<strong>Registro de Peso</strong>”.</p>
+<blockquote>
+<div><p><img alt="Acción Completar y Opción OK de la Ventana Registro de Peso" src="../../_images/action-complete-and-option-ok-from-the-weight-register-window.png" /></p>
+<p>Imagen 22. Acción Completar y Opción OK de la Ventana Registro de Peso</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../quote-to-invoice/index.html" class="btn btn-neutral float-right" title="7. Gestión de Ventas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="6. Gestión de Distribución" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, ADempiere ERP.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> 
+        <dd><a href="/mini-erp/">Mini-ERP</a></dd> </strong> 
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

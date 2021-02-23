@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>16.5. Dimensiones Contables &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="16.6. Combinación Contable" href="accounting-combination.html" />
+    <link rel="prev" title="16.4. Documentos sin Aplicar" href="unposted-documents.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> ERPYA
+          
+
+          
+            
+            <img src="../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/release-notes/index.html">4. <strong>Notas de Liberación ADempiere ERP</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution-management/index.html">6. <strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../customer-relations/index.html">8. <strong>Gestión de Relaciones con Clientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pos-management/index.html">9. <strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requisition-to-invoice/index.html">10. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../returns/index.html">11. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-items/index.html">12. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../loan-management/index.html">13. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../human-resources-management/index.html">14. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../asset-management/index.html">15. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">16. <strong>Gestión Contable</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="type-of-application.html">16.1. <strong>Tipo de Aplicación</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="accounting-element/index.html">16.2. <strong>Elemento Contable</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="opening-accounting-period.html">16.3. <strong>Apertura de Período Contable</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="unposted-documents.html">16.4. <strong>Documentos sin Aplicar</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">16.5. <strong>Dimensiones Contables</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-organizacion">16.5.1. <strong>Dimensión Organización</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-region-de-ventas">16.5.2. <strong>Dimensión Región de Ventas</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-actividad">16.5.3. <strong>Dimensión Actividad</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-proyecto">16.5.4. <strong>Dimensión Proyecto</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-socio-del-negocio">16.5.5. <strong>Dimensión Socio del Negocio</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-producto">16.5.6. <strong>Dimensión Producto</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dimension-campana">16.5.7. <strong>Dimensión Campaña</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="accounting-combination.html">16.6. <strong>Combinación Contable</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="currency-conversion/index.html">16.7. <strong>Conversión Monetaria</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="gl-distribution/index.html">16.8. <strong>Distribución Contable</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="accounting-setup-master/index.html">16.9. <strong>Configuración Contable (Maestros)</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="transaction-accounting/index.html">16.10. <strong>Contabilidad de Transacciones</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="costing/index.html">16.11. <strong>Gestión de Costos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="gl-journal-batch/index.html">16.12. <strong>Diario Contable</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="accounting-reports/index.html">16.13. <strong>Reportes Contables</strong></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/document-utility/index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/fiscal-printer/index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/procedures/index.html">3. <strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">E-commerce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ecommerce/index.html">1. <strong>e-Commerce</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">16. </span><strong>Gestión Contable</strong></a> &raquo;</li>
+        
+      <li><span class="section-number">16.5. </span><strong>Dimensiones Contables</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/adempiere/performance-analysis/accounting-dimensions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dimensiones-contables">
+<span id="documento-dimensiones-contable"></span><h1><span class="section-number">16.5. </span><strong>Dimensiones Contables</strong><a class="headerlink" href="#dimensiones-contables" title="Permalink to this headline">¶</a></h1>
+<p>La dimensión contable es una funcionalidad incorporada por ADempiere utilizada para unir información haciendo un recuento de los hechos contables que componen cada entidad. De esta forma, se define dimensiones primarias o secundarias respecto a las principales, esto quiere decir, que puede existir una dimensión acumulativa que derive a su vez múltiples dimensiones que posibilitan la implementación de métricas sumarias de cada una o agrupadas por la dimensión padre.</p>
+<p>Estas dimensiones contables sustituyen cuentas auxiliares utilizadas comúnmente por los contadores para visualizar en detalle saldos, por ejemplo de socios de negocios que actúan como accionistas, para entenderlo mejor veamos el siguiente ejemplo:</p>
+<blockquote>
+<div><p>Imaginemos una empresa que requiere ver el saldos contable de los pasivos de cada accionista de la empresa, para esto la empresa ha definido una cuentas llamada “<strong>CUENTAS POR PAGAR SOCIOS Y ACCIONISTAS-MARTÍN PIÑEROS</strong>” que muestra el detalle del pasivo del accionista <strong>Martín Piñeros</strong>. Así mismo, se agrega un nivel más al plan de cuentas, agregando tantas cuentas como accionistas existan, quedando de la siguiente forma:</p>
+<blockquote>
+<div><p><img alt="Ejemplo de Dimensión" src="../../_images/previous-accounting-dimension.png" /></p>
+<p>Imagen 1. Plan de cuentas con dimensiones</p>
+</div></blockquote>
+</div></blockquote>
+<p>Sin embargo, ADempiere contempla una visión holística y minimalista, que elimina la creación de múltiples cuentas contables para el detalle y a su vez las sustituye por las dimensiones contables, creando una combinación entre la cuenta contable y la dimensión, quedando de la siguiente forma:</p>
+<blockquote>
+<div><p><img alt="Dimensión Socio de Negocio" src="../../_images/current-accounting-dimension.png" /></p>
+<p>Imagen 2. Dimensión Contable de Socio de Negocio</p>
+</div></blockquote>
+<p>Por su parte, al crear una transacción con esta dimensión contable el resultado será el siguiente:</p>
+<blockquote>
+<div><p><img alt="Dimensión Contable" src="../../_images/Dimension-Accounting.png" /></p>
+<p>Imagen 3. Dimensión Contable ADempiere</p>
+</div></blockquote>
+<p>Las entidades con las que ADempiere permite dimensionar los diferentes hechos contables son las siguientes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Organización</strong>: Representa una entidad legal dentro de la empresa, generalmente estructurada de forma dependiente a la compañía principal, esta puede ser una sucursal, tienda o franquicia.</p></li>
+<li><p><strong>Socio de negocio</strong>: Representa un sujeto jurídico o natural con el que la organización establece una alianza temporal o permanente, este puede ser un proveedor, cliente, accionista o empleado. Para profundizar más este tema vaya a el documento: <a class="reference internal" href="../master/business-partner/business-partner.html#documento-socio-negocio"><span class="std std-ref">Registro de Socio del Negocio</span></a>.</p></li>
+<li><p><strong>Producto</strong>: Representa el resultado obtenido de una producción, que es utilizado durante la compra o la venta,  este puede ser servicio o artículo. Para profundizar más este tema vaya a el documento: <a class="reference internal" href="../master/warehouse/warehouse.html#documento-producto"><span class="std std-ref">Registro de Almacén</span></a>.</p></li>
+<li><p><strong>Región de Venta</strong>: Representa una zona de venta o conjunto de clientes o prospectos que son asignados a un vendedor y con las que la empresa puede establecer un negocio. Para profundizar más este tema vaya a el documento: <a class="reference internal" href="../quote-to-invoice/sales-region/sales-region.html#documento-region-ventas"><span class="std std-ref">Registro de Región de Ventas</span></a>.</p></li>
+<li><p><strong>Actividad</strong>: Representa las actividades realizadas en la empresa, generalmente un departamento, permitiendo determinar el costo o el gasto de cada actividad.</p></li>
+<li><p><strong>Proyecto</strong>: Representa la planificación de actividades relacionadas al cumplimiento de un objetivo específico, generalmente delimitado por fases y tareas.</p></li>
+<li><p><strong>Campaña</strong>: Representa la agrupación de actividades realizadas con la finalidad de lograr un determinado objetivo.</p></li>
+<li><p><strong>Elementos Personalizados:</strong> A menudo los clientes han preguntado ¿Cómo hacemos si nosotros manejamos una dimensión u otro elemento para medir nuestro desempeño?.</p></li>
+</ol>
+<p>Pues bien, ADempiere deja a disposición del cliente cinco campos para personalizar a su criterio, los mismos, funcionan exactamente igual a las dimensiones anteriormente explicadas, estos son:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Usuario1</p></li>
+<li><p>Usuario2</p></li>
+<li><p>Usuario3</p></li>
+<li><p>Usuario4</p></li>
+<li><p>Usuario5</p></li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+<p>Se puede decir entonces que una dimensión es el respaldo que da una entidad a un hecho contable, este sustituye la segmentación de cuentas contables mediante creación de cuentas detalles, en consecuencia, los asientos contables son generados a partir de las transacciones en las cuales intervienen las entidades consideradas dimensiones.</p>
+<p>Finalmente, esta funcionalidad es implementada desde los reportes contables detallados hasta los informes financieros, permitiendo esquematizar la información de forma segmentada por entidad.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere" src="../../_images/accounting-dimensions-menu.png" /></p>
+<p>Imagen 4. Menú de ADempiere</p>
+</div></blockquote>
+<div class="section" id="dimension-organizacion">
+<h2><span class="section-number">16.5.1. </span><strong>Dimensión Organización</strong><a class="headerlink" href="#dimension-organizacion" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Organización" src="../../_images/accounting-dimensions-window.png" /></p>
+<p>Imagen 5. Pestaña Dimensión Organización</p>
+</div></blockquote>
+</div>
+<div class="section" id="dimension-region-de-ventas">
+<h2><span class="section-number">16.5.2. </span><strong>Dimensión Región de Ventas</strong><a class="headerlink" href="#dimension-region-de-ventas" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Región de Ventas" src="../../_images/sales-region-dimension-tab.png" /></p>
+<p>Imagen 6. Pestaña Dimensión Región de Ventas</p>
+</div></blockquote>
+</div>
+<div class="section" id="dimension-actividad">
+<h2><span class="section-number">16.5.3. </span><strong>Dimensión Actividad</strong><a class="headerlink" href="#dimension-actividad" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Actividad" src="../../_images/activity-dimension-tab.png" /></p>
+<p>Imagen 7. Pestaña Dimensión Actividad</p>
+</div></blockquote>
+</div>
+<div class="section" id="dimension-proyecto">
+<h2><span class="section-number">16.5.4. </span><strong>Dimensión Proyecto</strong><a class="headerlink" href="#dimension-proyecto" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Proyecto" src="../../_images/project-dimension-tab.png" /></p>
+<p>Imagen 8. Pestaña Dimensión Proyecto</p>
+</div></blockquote>
+</div>
+<div class="section" id="dimension-socio-del-negocio">
+<h2><span class="section-number">16.5.5. </span><strong>Dimensión Socio del Negocio</strong><a class="headerlink" href="#dimension-socio-del-negocio" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Socio del Negocio" src="../../_images/business-partner-dimension-tab.png" /></p>
+<p>Imagen 9. Pestaña Dimensión Socio del Negocio</p>
+</div></blockquote>
+</div>
+<div class="section" id="dimension-producto">
+<h2><span class="section-number">16.5.6. </span><strong>Dimensión Producto</strong><a class="headerlink" href="#dimension-producto" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Producto" src="../../_images/product-dimension-tab.png" /></p>
+<p>Imagen 10. Pestaña Dimensión Producto</p>
+</div></blockquote>
+</div>
+<div class="section" id="dimension-campana">
+<h2><span class="section-number">16.5.7. </span><strong>Dimensión Campaña</strong><a class="headerlink" href="#dimension-campana" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Campaña" src="../../_images/campaign-dimension-tab.png" /></p>
+<p>Imagen 11. Pestaña Dimensión Campaña</p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="accounting-combination.html" class="btn btn-neutral float-right" title="16.6. Combinación Contable" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="unposted-documents.html" class="btn btn-neutral float-left" title="16.4. Documentos sin Aplicar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, ADempiere ERP.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> 
+        <dd><a href="/mini-erp/">Mini-ERP</a></dd> </strong> 
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

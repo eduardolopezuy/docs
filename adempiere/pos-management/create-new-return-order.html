@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Crear Nueva Orden de Devolución &mdash; ERPYA 1.0 Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> ERPYA
+          
+
+          
+            
+            <img src="../../_static/ERP_Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+<h2>Tabla de Contenido</h2>
+
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">DOCUMENTACIÓN ESTÁNDAR</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/standard-procedures/index.html"><strong>Procedimientos Estándares</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/openproject/index.html">1. <strong>Open Project</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/slack/index.html">2. <strong>Slack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/rst/index.html">3. <strong>Herramienta RestructuredText</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/release-notes/index.html">4. <strong>Notas de Liberación ADempiere ERP</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basic-steps/index.html">1. <strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quality-management/index.html">3. <strong>Gestión de Calidad</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-management/index.html">4. <strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../production-management/index.html">5. <strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution-management/index.html">6. <strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quote-to-invoice/index.html">7. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../customer-relations/index.html">8. <strong>Gestión de Relaciones con Clientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">9. <strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requisition-to-invoice/index.html">10. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../returns/index.html">11. <strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-items/index.html">12. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../loan-management/index.html">13. <strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../human-resources-management/index.html">14. <strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../asset-management/index.html">15. <strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance-analysis/index.html">16. <strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/document-utility/index.html">1. <strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/fiscal-printer/index.html">2. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/procedures/index.html">3. <strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/report/index.html">4. <strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">E-commerce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ecommerce/index.html">1. <strong>e-Commerce</strong></a></li>
+</ul>
+
+            
+          
+<h2>Otros</h2>
+<ul>
+<li><a href="../../contributing.html"></a></li>
+</ul>
+
+<h2>Para Mayor Información</h2>
+<ul>
+<li><a href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a></li>
+<li><a href="https://github.com/erpcya/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Download Docs</a></li>
+</ul>
+
+<ul class="ethical-sidebar">
+    <li>
+        <a class="ethical-content" href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                <img src="https://assets.readthedocs.org/sustainability/readthedocs-logo-fs8.png">
+        </a>
+        
+        <li>
+            <a href="https://readthedocs.org/sustainability/click/305/gi4RdtlZ7bCi/" rel="nofollow" target="_blank" class="ethical-image-link">
+                Repositorios Privados y Soporte Prioritario!
+                
+                <br \>
+                    
+                Intenta leer los documentos para negocios hoy!
+                            
+            </a>
+        </li>
+    </li>
+</ul>
+
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ERPYA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><strong>Crear Nueva Orden de Devolución</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/adempiere/pos-management/create-new-return-order.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="crear-nueva-orden-de-devolucion">
+<span id="documento-crear-nueva-orden-de-devolucion"></span><h1><strong>Crear Nueva Orden de Devolución</strong><a class="headerlink" href="#crear-nueva-orden-de-devolucion" title="Permalink to this headline">¶</a></h1>
+<p>El proceso crear nueva orden de devolución del punto de venta, se utiliza para las devoluciones parciales de productos. Dicho proceso genera una autorización de devolución que permite elegir los productos que se van a devolver y su cantidad.</p>
+<p>Adicional a ello, los documentos “<strong>Orden de Devolución</strong>”, “<strong>Devolución</strong>” y “<strong>Nota de Crédito</strong>” son generados automáticamente en estado “<strong>Completo</strong>”, al seleccionar el icono “<strong>Pagar</strong>”, ubicado en la barra de herramientas de la ventana “<strong>Punto de Venta</strong>”.</p>
+<p>Para mejor referencia de lo explicado anteriormente, se presenta a continuación el diagrama del proceso “<strong>Crear Nueva Orden de Devolución</strong>”, con la finalidad dar a conocer el comportamiento de ADempiere ante dicho proceso.</p>
+<blockquote>
+<div><p><img alt="diagrama de crear nueva orden de devolución pos" src="../../_images/create-new-return-order.png" /></p>
+<p>Imagen 1. Diagrama de Crear Nueva Orden de Devolución POS</p>
+</div></blockquote>
+<p>Para ejecutar correctamente el proceso crear nueva orden de devolución, se debe realizar el siguiente procedimiento.</p>
+<div class="section" id="ejecucion-del-proceso">
+<h2><strong>Ejecución del Proceso</strong><a class="headerlink" href="#ejecucion-del-proceso" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la carpeta “<strong>Órdenes de Venta</strong>”, por último seleccione la carpeta “<strong>Punto de Venta</strong>”. Para finalizar, seleccione la ventana “<strong>Punto de Venta</strong>”.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere" src="../../_images/point-of-sale-menu.png" /></p>
+<p>Imagen 12</p>
+</div></blockquote>
+</li>
+<li><p>La interfaz de la ventana “<strong>Punto de Venta</strong>”, se encuentra definida de forma específica en el documento <a class="reference internal" href="point-of-sale-interface.html#documento-interfaz-del-punto-de-venta"><span class="std std-ref">Interfaz de Punto de Venta</span></a>, elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>. Realice cada uno de los procesos explicados a continuación para obtener un resultado exitoso en la creación de una nueva orden de devolución por el punto de venta.</p></li>
+<li><p>Realice la búsqueda de registros de órdenes de venta generadas desde el punto de venta, seleccionando el icono “<strong>Registros Históricos</strong>” de la barra de herramientas de la ventana “<strong>Punto de Venta</strong>”, dicho proceso se encuentra explicado en el documento <a class="reference internal" href="point-of-sale-interface.html#documento-paso-barra-de-herramientas"><span class="std std-ref">Barra de Herramientas del Punto de Venta</span></a>, elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Seleccione en la ventana “<strong>Orden de Venta</strong>”, generada del icono “<strong>Registros Históricos</strong>”, la orden de venta que requiere crearle una nueva orden de devolución.</p>
+<blockquote>
+<div><p><img alt="Selección de Orden de Venta para Devolución" src="../../_images/sales-order-selection-for-return.png" /></p>
+<p>Imagen 3. Selección de Orden de Venta para Devolución</p>
+</div></blockquote>
+</li>
+<li><p>Por último, seleccione la opción “<strong>OK</strong>” para ubicar en la ventana “<strong>Punto de Venta</strong>”, el registro de la orden de venta realizada desde el punto de venta.</p>
+<blockquote>
+<div><p><img alt="Selección de la Opción OK de la Orden de Venta para Devolución" src="../../_images/selection-of-the-ok-option-of-sales-order-for-return.png" /></p>
+<p>Imagen 4. Selección de la Opción OK de la Orden de Venta para Devolución</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Luego de ubicar la orden de venta que requiere crearle una nueva orden de devolución, seleccione la opción “<strong>Crear Nueva Orden de Devolución</strong>”, ubicada en el menú desplegado por el icono “<strong>Proceso</strong>” de la barra de herramientas de la ventana “<strong>Punto de Venta</strong>”, explicada en el documento <a class="reference internal" href="point-of-sale-interface.html#documento-paso-barra-de-herramientas"><span class="std std-ref">Barra de Herramientas del Punto de Venta</span></a> elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>.</p>
+<blockquote>
+<div><p><img alt="Opción Crear Nueva Orden de Devolución" src="../../_images/option-create-new-return-order.png" /></p>
+<p>Imagen 5. Opción Crear Nueva Orden de Devolución</p>
+</div></blockquote>
+</li>
+<li><p>Al seleccionar el proceso “<strong>Crear Nueva Orden de Devolución</strong>”, ADempiere muestra el mensaje para la confirmación de la ejecución del proceso, en el cual se debe seleccionar la opción “<strong>OK</strong>”, para ejecutar el mismo.</p>
+<blockquote>
+<div><p><img alt="Mensaje de Confirmación de la opción Crear Nueva Orden de Devolución" src="../../_images/confirmation-message-of-the-option-create-new-return-order.png" /></p>
+<p>Imagen 6. Mensaje para Confirmación de Proceso</p>
+</div></blockquote>
+</li>
+<li><p>Luego de ejecutar la acción anteriormente explicada, ADempiere muestra un mensaje con el resultado del proceso.</p>
+<blockquote>
+<div><p><img alt="Resultado del Proceso Crear Nueva Orden de Devolución" src="../../_images/result-of-the-create-new-return-order-process.png" /></p>
+<p>Imagen 7. Resultado del Proceso Crear Nueva Orden de Devolución</p>
+</div></blockquote>
+</li>
+<li><p>Podrá visualizar el registro de la orden de devolución creada, donde debe ubicar el registro de la línea del producto a modificar e ingresar en el campo “<strong>Cantidad Ordenada</strong>”, la cantidad de producto que realmente se ve a vender. Si el caso amerita eliminar el producto con todas sus cantidades, también se puede realizar.</p>
+<blockquote>
+<div><p><img alt="Modificación de Producto a Devolver" src="../../_images/modification-of-product-to-be-returned.png" /></p>
+<p>Imagen 8. Modificación de Producto a Devolver</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para el ejemplo expuesto en el presente caso, se tenia vendida la cantidad de “<strong>10</strong>” unidades del producto “<strong>CEMENTO GRIS GENERICO ( SACOS )</strong>” y se esta realizando la devolución de “<strong>5</strong>” unidades.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Luego de ingresar y verificar las modificaciones de los productos a vender y su cantidad correspondiente, se debe seleccionar el icono “<strong>Pagar</strong>”, ubicado en la barra de herramientas de la ventana “<strong>Punto de Venta</strong>”, explicada en el documento <a class="reference internal" href="point-of-sale-interface.html#documento-paso-barra-de-herramientas"><span class="std std-ref">Barra de Herramientas del Punto de Venta</span></a> elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>.</p>
+<blockquote>
+<div><p><img alt="Selección de Opción Pagar Completar la Orden de Devolución" src="../../_images/option-selection-pay-complete-return-order.png" /></p>
+<p>Imagen 9. Selección de Opción Pagar Completar la Orden de Devolución</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La presente acción completa el documento “<strong>Orden de Devolución Cliente</strong>”, y genera automáticamente en estado “<strong>Completo</strong>”, los documentos “<strong>Devolución</strong>” y “<strong>Nota de Crédito</strong>”.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Luego de seleccionar el icono “<strong>Pagar</strong>”, ADempiere muestra un mensaje de confirmación que indica que el proceso a finalizado.</p>
+<blockquote>
+<div><p><img alt="Mensaje de Proceso Finalizado" src="../../_images/process-finished-message.png" /></p>
+<p>Imagen 10. Mensaje de Proceso Finalizado</p>
+</div></blockquote>
+</li>
+<li><p>Por último, se muestra el reporte del documento “<strong>Nota de Crédito de CxC</strong>” generada automáticamente desde el proceso “<strong>Crear Nueva Orden de Devolución</strong>”.</p>
+<blockquote>
+<div><p><img alt="Nota de Crédito Generada del proceso Crear Nueva Orden de Devolución" src="../../_images/credit-note-generated-from-the-create-new-return-order-process.png" /></p>
+<p>Imagen 11. Nota de Crédito Generada del proceso Crear Nueva Orden de Devolución</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="consulta-de-documentos-generados">
+<h2><strong>Consulta de Documentos Generados</strong><a class="headerlink" href="#consulta-de-documentos-generados" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>En la ventana “<strong>Orden de Devolución (Cliente)</strong>”, se puede visualizar el registro de la orden de devolución con ayuda del número de documento “<strong>OPOS-36108</strong>” generado en el reporte de la nota de crédito mostrada anteriormente.</p>
+<blockquote>
+<div><p><img alt="consulta de orden de devolución generada del proceso crear nueva orden de devolución" src="../../_images/return-order-query-generated-from-the-create-new-return-order-process.png" /></p>
+<p>Imagen 12. Consulta de Orden de Devolución Generada</p>
+</div></blockquote>
+</li>
+<li><p>De igual manera, se puede visualizar en la ventana “<strong>Devolución Cliente</strong>”, el registro generado desde el proceso anteriormente explicado.</p>
+<blockquote>
+<div><p><img alt="consulta de devolución generada del proceso crear nueva orden de devolución" src="../../_images/return-query-generated-from-process-create-new-return-order.png" /></p>
+<p>Imagen 13. Consulta de Devolución Generada</p>
+</div></blockquote>
+</li>
+<li><p>Finalmente, se puede visualizar en la ventana “<strong>Documentos por Cobrar</strong>”, el registro de la nota de crédito generado automáticamente desde el proceso anteriormente explicado.</p>
+<blockquote>
+<div><p><img alt="consulta de nota de crédito generada del proceso crear nueva orden de devolución" src="../../_images/credit-memo-query-generated-from-process-create-new-return-order.png" /></p>
+<p>Imagen 14. Consulta de Nota de Crédito Generada</p>
+</div></blockquote>
+</li>
+<li><p>Adicional a ello, se genera un egreso en caja con el tipo de documento “<strong>Egreso Caja Cobranza</strong>”, para reflejar el movimiento de egreso realizado automáticamente al ejecutar el proceso “<strong>Crear Nueva Orden de Devolución</strong>”.</p>
+<blockquote>
+<div><p><img alt="consulta de pago nacional generado en caja del proceso crear nueva orden de devolución" src="../../_images/national-payment-query-generated-in-process-checkout-create-new-return-order.png" /></p>
+<p>Imagen 15. Consulta de Pago Nacional Generado en Caja</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, ADempiere ERP.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: 
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+       <strong> <dd><a href="/master/">latest</a></dd>
+        <dd><a href="/adempiere-3.7/">ADempiere-3.7</a></dd> 
+        <dd><a href="/mini-erp/">Mini-ERP</a></dd> </strong> 
+        <dd><a href="/4.0.0/">4.0.0</a></dd>
+        
+      </dl>
+     
+    <hr/>
+    
+ 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
